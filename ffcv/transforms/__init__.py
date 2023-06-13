@@ -1,5 +1,5 @@
 from .cutout import Cutout
-from .flip import RandomHorizontalFlip
+from .flip import RandomHorizontalFlip, LabelRandomHorizontalFlip
 from .ops import ToTensor, ToDevice, ToTorchImage, Convert, View
 from .common import Squeeze
 from .resized_crop import RandomResizedCrop, LabelRandomResizedCrop, PadRGBImageDecoder, CornerCrop, CenterCrop
@@ -19,7 +19,7 @@ from .erasing import RandomErasing
 __all__ = ['ToTensor', 'ToDevice',
            'ToTorchImage', 'NormalizeImage',
            'Convert',  'Squeeze', 'View',
-           'RandomResizedCrop', 'LabelRandomResizedCrop', 'PadRGBImageDecoder', 'CornerCrop', 'CenterCrop', 'RandomHorizontalFlip', 'RandomTranslate',
+           'RandomResizedCrop', 'LabelRandomResizedCrop', 'PadRGBImageDecoder', 'CornerCrop', 'CenterCrop', 'RandomHorizontalFlip', 'LabelRandomHorizontalFlip', 'RandomTranslate',
            'Cutout', 'ImageMixup', 'LabelMixup', 'MixupToOneHot',
            'Poison', 'ReplaceLabel',
            'ModuleWrapper', 
